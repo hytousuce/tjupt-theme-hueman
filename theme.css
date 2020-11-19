@@ -1,0 +1,220 @@
+/*
+ * Author: Hytousuce (kongjune)
+ * Hueman style for TJUPT
+ * LastEditionTime: 2020-11-19 10:48
+ * 
+ * The style is referenced from WordPress Theme **Hueman**(https://wordpress.org/themes/hueman/)
+ * with personalized modification.
+ * 
+ * The theme is still under development.
+ */
+
+:root {
+    --background-color: #eaeaea;
+    --header-background-color: #454e5c;
+    --mainouter-color: #ffffff;
+    --navbar-color: #33363b;
+    --divider-border-color: #eee;
+    --gray-font-color: #666;
+    --dark-font-color: #444;
+    --white-font-color: #fff;
+    --white-font-trans-color: rgba(255,255,255,0.7);
+    --blue-color: #006bde;
+    --green-color: #82b965;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--dark-font-color);
+}
+
+table#header .logo_img{
+    box-shadow: none;
+    border-radius: 0;
+}
+
+table.mainouter {
+    transform: translate(0, -123px);
+    border-radius: 0;
+    border: none;
+    background-color: var(--mainouter-color);
+}
+
+table.mainouter td#nav_block table {
+    margin-bottom: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+table.mainouter td#nav_block table.main {
+    background-color: var(--navbar-color);
+    color: var(--white-font-trans-color);
+}
+
+table.mainouter td#nav_block {
+    background-color: var(--navbar-color);
+}
+
+table.mainouter td#nav_block table.main ul#mainmenu {
+    padding: 10px 15px;
+}
+
+table.mainouter td#nav_block table.main ul#mainmenu li a{
+    color: var(--white-font-trans-color-color);
+    border: none;
+    transform: all .5s;
+}
+
+table.mainouter td#nav_block table.main ul#mainmenu li.selected a{
+    color: var(--white-font-color);
+    border: none;
+}
+
+table.mainouter td#nav_block table.main ul#mainmenu li:not(.selected) a:hover {
+    border: none;
+    color: var(--white-font-color);
+    font-weight: unset;
+}
+
+table.mainouter td#nav_block table#info_block {
+    margin-bottom: -16px;
+}
+
+table.mainouter td#outer {
+    padding: 20px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: var(--mainouter-color);
+}
+
+table#info_block td {
+    padding: 0;
+}
+
+table#info_block table td {
+    padding: 15px;
+}
+
+table#info_block table td:first-child {
+    border-bottom: 1px solid var(--divider-border-color);
+    background-color: var(--mainouter-color);
+}
+
+table#info_block table td:last-child {
+    background-color: var(--green-color);
+    color: var(--white-font-color);
+    border-bottom: 1px solid var(--green-color);
+}
+
+table#header {
+    width: 100%;
+    margin: 0;
+    background-color: var(--header-background-color);
+}
+
+table#header div.logo_img {
+    padding: 0 calc(50% - 590px) 140px calc(50% - 590px);
+}
+
+#footer {
+    margin-top: -50px;
+    background-color: var(--navbar-color);
+    color: var(--white-font-color);
+    padding: 15px 0;
+}
+
+#footer a {
+    color: var(--blue-color);
+}
+
+#footer div:first-child {
+    margin: 0;
+}
+
+div#back-to-top {
+    border-radius: 5px 0 0 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    right: 0;
+    width: 60px;
+    background-color: var(--mainouter-color);
+}
+
+div#back-to-top svg {
+    color: var(--gray-font-color);
+    height: 30px;
+    margin: 5px auto 0;
+    width: 30px;
+    transition: all .5s;
+}
+
+div#back-to-top:hover svg {
+    color: var(--dark-font-color);
+}
+
+div#tag.tag-group {
+    display: inline-block;
+    height: 20px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+div#tag.tag-group font.tag {
+    padding: 0 8px;
+    line-height: 20px;
+    height: 20px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-right: 1px solid var(--divider-border-color);
+    margin: 0;
+}
+
+div#tag.tag-group font.tag:last-child {
+    border-right: none;
+}
+
+div.conn-group {
+    overflow: hidden;
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 5px;
+    padding: 0;
+}
+
+div.conn-group div.conn {
+    border-right: solid 1px var(--divider-border-color);
+    height: 20px;
+    line-height: 20px;
+    width: 12px;
+    padding: 0 5px;
+    margin: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+div.conn-group div.conn:first-child {
+    border-right: none;
+}
+
+font.free, font.halfdown {
+    display: inline-block;
+    color: var(--white-font-color);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+font.free {
+    background-color: var(--green-color);
+}
+
+font.halfdown {
+    background-color: var(--blue-color);
+}
